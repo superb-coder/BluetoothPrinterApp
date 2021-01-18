@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red_200"
+    android:orientation="vertical">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:padding="10dp">
+        <EditText
+            android:id="@+id/editAmount"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Type Amount to Pay"
+            android:background="@null"
+            android:textColor="@color/red_200"
+            android:textSize="32sp"
+            android:textColorHint="@color/brown_200"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:ems="10"/>
+
+        <Button
+            android:id="@+id/payBtn"
+            android:layout_marginTop="16dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Pay"
+            android:textSize="24sp"
+            app:backgroundTint="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

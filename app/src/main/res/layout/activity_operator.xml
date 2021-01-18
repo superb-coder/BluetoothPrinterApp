@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.OperatorActivity">
+
+    <include
+        layout="@layout/layout_toolbar"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_200"
+        android:orientation="vertical"
+        android:padding="14dp">
+        <Space android:layout_width="match_parent"
+            android:layout_height="32dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/invoiceIDView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="24sp"
+                android:text="INV-BIZF37815"/>
+            <TextView
+                android:id="@+id/payStatusView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:text="Unpaid" />
+        </RelativeLayout>
+        <Space android:layout_width="match_parent"
+            android:layout_height="4dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/valueView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="36sp"
+                    android:text="$72.00"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BALANCED DUE"
+                    android:textColor="@color/white"
+                    android:textSize="16sp">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/offset_layout">
+                <TextView
+                    android:id="@+id/offsetValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="36sp"
+                    android:text="$72.00"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OFFSET DUE"
+                    android:textColor="@color/white"
+                    android:textSize="16sp">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/payable_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|end"
+                android:textAlignment="textEnd">
+                <TextView
+                    android:id="@+id/willPaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="36sp"
+                    android:text="$72.00"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAYABLE DUE"
+                    android:textColor="@color/white"
+                    android:textSize="16sp">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.17.2019"
+            android:textColor="@color/black_200"
+            android:textSize="28sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice Date"
+            android:textColor="@color/red_200"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/red_200"
+            android:textSize="18sp"/>
+        <Space android:layout_height="match_parent"
+            android:layout_width="10dp"/>
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pop Sorin"
+            android:textColor="@color/black_200"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address 1"
+            android:textColor="@color/red_200"
+            android:textSize="18sp"/>
+        <Space android:layout_height="match_parent"
+            android:layout_width="10dp"/>
+        <TextView
+            android:id="@+id/address1View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mircea Eliade 46F AP.8"
+            android:textColor="@color/black_200"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address 2"
+            android:textColor="@color/red_200"
+            android:textSize="18sp"/>
+        <Space android:layout_height="match_parent"
+            android:layout_width="10dp"/>
+        <TextView
+            android:id="@+id/address2View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="400675, Cluj-Napoca, Cluj"
+            android:textColor="@color/black_200"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID 1"
+                android:textColor="@color/red_200"
+                android:textSize="18sp"/>
+            <Space android:layout_height="match_parent"
+                android:layout_width="10dp"/>
+            <TextView
+                android:id="@+id/id1View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1661119120687"
+                android:textColor="@color/black_200"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Space android:layout_height="match_parent"
+            android:layout_width="10dp"/>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID 2"
+                android:textColor="@color/red_200"
+                android:textSize="18sp"/>
+            <Space android:layout_height="match_parent"
+                android:layout_width="10dp"/>
+            <TextView
+                android:id="@+id/id2View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KX146978"
+                android:textColor="@color/black_200"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
